@@ -6,4 +6,5 @@ int main(){
 
     printf("%X",num);
     printf("%o",num);
+    return 0;
 }
