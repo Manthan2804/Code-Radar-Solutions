@@ -1,9 +1,19 @@
 // Your code here...
 #include <stdio.h>
-int main(){
+#include <math.h>  // For rounding function
+
+int main() {
     float num;
-    printf("");
-    scanf("%f",&num);
-    printf("You entered: %.4f\n",num);
+
+    // Prompt for input
+    printf("Enter a floating-point number: ");
+    scanf("%f", &num);
+    
+    // Round the number to 4 decimal places
+    num = roundf(num * 10000) / 10000;
+
+    // Print the number with 4 decimal places
+    printf("You entered: %.4f\n", num);
+
     return 0;
 }
