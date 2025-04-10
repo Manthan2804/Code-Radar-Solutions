@@ -11,7 +11,7 @@ int main() {
     scanf("%d", &num2);
 
     // Perform bitwise OR
-    result = num1 && num2;
+    result = num1 & num2;
 
     // Print the result
     printf("%d", result);
